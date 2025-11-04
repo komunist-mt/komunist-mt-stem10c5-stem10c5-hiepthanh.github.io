@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌳 Interactive Tree Quiz Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header class="app-header">
+    <h1>🌳 Grow Your Tree Quiz</h1>
+    <p class="subtitle">Answer correctly 25 questions to grow the tree — questions repeat until you reach 25 correct answers.</p>
+  </header>
+
+
+  <main class="main">
+    <section class="left-card">
+      <div id="tree-card">
+        <div id="tree" aria-hidden="true"></div>
+  <div id="seed-label">Cây đi</div>
+      </div>
+      <div id="score">Correct answers: <span id="score-num">0</span> / <span id="goal">25</span></div>
+      <div id="attempts">Attempts: <span id="attempts-num">0</span></div>
+    </section>
+
+
+    <section class="right-card">
+      <div id="question-box" class="card">
+        <p id="question">Loading question...</p>
+        <div class="options">
+          <button id="opt0" class="opt"></button>
+          <button id="opt1" class="opt"></button>
+          <button id="opt2" class="opt"></button>
+          <button id="opt3" class="opt"></button>
+        </div>
+      </div>
+
+
+      <div id="message" class="hint">Answer correctly to progress. The quiz continues until you reach 25 correct answers.</div>
+    </section>
+  </main>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/idb-keyval@6/dist/umd.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
